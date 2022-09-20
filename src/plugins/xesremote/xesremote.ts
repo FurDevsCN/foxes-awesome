@@ -102,7 +102,7 @@ export class XesRemote {
     )
     this._host = new Promise(resolve => {
       this._ws.on('upgrade', resp => {
-        let a = resp.headers['server']
+        const a = resp.headers['server']
         if (typeof a == 'string') resolve(a)
         else resolve(`(unknown host ${JSON.stringify(a)})`)
       })
