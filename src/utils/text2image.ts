@@ -8,7 +8,7 @@ import canvas from 'canvas'
 function processArr(text: string[], max: number): string[] {
   // 此函数的作用是在字数超过最大限制时切割字符串。
   const fin: string[] = []
-  const reg = new RegExp('/^[\\0-\\x7F]+$/')
+  const reg = /^[\0-\x7F]+$/
   for (const e of text) {
     let temp = ''
     for (let i = 0, sum = 0; i < e.length; i++) {

@@ -19,21 +19,20 @@ async function handler(
   const cmd: string[] = input.split(' ')
   // 访问解析后的第一个元素，也即用户命令。
   switch (cmd[0]) {
-    // stop 作为 exit 的别名。
-    case 'stop':
     // 退出进程。
     case 'exit': {
       // 告诉用户进程将要停止。
       console.log('停止')
       // 退出。
-      return exit(config)
+      exit(config)
+      break
     }
     // 显示帮助。
     case 'help': {
       // 显示一个代表帮助的表格。
       console.table({
         help: '显示帮助',
-        'stop (aka exit)': '停止插件管理器',
+        'exit': '停止插件管理器',
         disable: '停用插件。',
         list: '显示所有启用的插件。',
         enable: '启用插件。',

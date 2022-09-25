@@ -46,7 +46,7 @@ export async function getPlugins(): Promise<Module[]> {
  * 保存配置并关闭程序。
  * @param config 配置。
  */
-export function exit(config: Record<string, unknown>): never {
+export function exit(config: Record<string, unknown>): void {
   // 将可能被插件更改的 config 重新写回配置文件。此操作是可选的。如果不希望配置文件被插件更改，请注释下面的一行。
   writeFileSync('src/config.json', JSON.stringify(config, undefined, 2))
   // 退出进程。此条语句后的内容将无法被访问到。

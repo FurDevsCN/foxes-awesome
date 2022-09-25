@@ -39,7 +39,7 @@ async function runbot(): Promise<void> {
       value.init(new Plugin(pm), config) // 初始化插件。
     )
   }) // 获得插件后，批次安装插件。
-  init(pm, config) // 初始化命令系统。
   console.log('/// 凌、行きます！ ///') // 在完成后，输出一条代表初始化完成的消息。
+  init(pm, config) // 初始化命令系统。
 }
 runbot() // 启动主函数。Javascript 中全局语句默认是同步的，需要异步包装。
