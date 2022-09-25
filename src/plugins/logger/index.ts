@@ -17,9 +17,7 @@ export default {
       }
       // 构造用户在群聊中的消息，并输出到控制台。
       console.log(
-        `\r  ${data.sender.id}(${data.sender.memberName}): ${JSON.stringify(
-          data.messageChain
-        )}`
+        `\r  ${data.sender.id}(${data.sender.memberName}): ${JSON.stringify(Array.from(data.messageChain))}`,
       )
       // 在原始输出中写入一个结束符。若接下来的事件仍在同一个群聊，则此结束符被覆盖。
       process.stdout.write('\r}')

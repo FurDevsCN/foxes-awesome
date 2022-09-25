@@ -37,6 +37,8 @@ export default {
         }
       })
     )
+    // 提示部署者此插件已经被加载。非强制。
+    console.info('[INFO] 已加载 网页预览(browser)。')
     return plug
   }
 }
