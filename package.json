@@ -1,6 +1,6 @@
 {
   "name": "foxes-awesome",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于mirai-foxes的机器人示例。",
   "main": "src/index.ts",
   "scripts": {
