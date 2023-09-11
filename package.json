@@ -24,7 +24,7 @@
     "js-base64": "^3.7.2",
     "mirai-foxes": "^1.5.7",
     "playwright": "^1.26.0",
-    "ws": "^8.8.1"
+    "ws": "^8.14.1"
   },
   "devDependencies": {
     "@types/ws": "^8.5.3",
