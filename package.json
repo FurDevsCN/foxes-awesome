@@ -23,7 +23,7 @@
     "foxes-plugin": "^1.1.5",
     "js-base64": "^3.7.2",
     "mirai-foxes": "^1.5.7",
-    "playwright": "^1.26.0",
+    "playwright": "^1.39.0",
     "ws": "^8.8.1"
   },
   "devDependencies": {
